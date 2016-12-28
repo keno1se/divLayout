@@ -1,0 +1,252 @@
+﻿@charset 'utf-8';
+
+
+body {
+    background-color: darkcyan;
+    font-family:sans-serif;
+    padding:0px;
+    margin:0px;
+}
+
+
+ /*************************************/   
+ /************* DIV STYLING   *********/   
+ /*************************************/   
+
+ 
+    /* Makes the id=div2U2 the last child, color red */
+#divparent1 div:last-child{
+    background-color:red;
+}
+    /* does't work when using the class="divparents" */
+ 
+
+/*********************** div1 ************************************/
+#div1 {
+    position: relative;
+    top: 0px;              
+    left: 50px;
+    
+        /*the styling of the div*/
+    border:solid;
+    border-radius:5px;
+    width:200px;
+    padding-left:7px;
+    background-color:orange;
+    border-radius:5px;
+}
+
+
+#div1U {
+    position: relative;
+    top: -150px;           
+    left: 50px;
+    
+        /*the styling of the div*/
+    border:solid;
+    border-radius:5px;
+    width:200px;
+    padding-left:7px;
+    background-color:orange;
+    border-radius:5px;
+}
+
+#div1U2 {
+    position: relative;
+    top: -300px;           
+    left: 50px;
+    
+        /*the styling of the div*/
+    border:solid;
+    border-radius:5px;
+    width:200px;
+    padding-left:7px;
+    background-color:orange;
+    border-radius:5px;
+}
+
+    
+
+/*********************** div2 ************************************/
+
+/*div2U2 will be last-child*/
+#div2{
+    position: relative;
+    top: -75px;
+    left: 263px;
+
+        /*the styling of the div*/
+    border:solid;
+    border-radius:5px;
+    width:200px;
+    padding-left:7px;
+    background-color:yellowgreen;
+
+}
+
+#div2U{
+    position: relative;
+    top: -225px;              
+    left: 263px;
+    
+        /*the styling of the div*/
+    border:solid;
+    border-radius:5px;
+    width:200px;
+    padding-left:7px;
+    background-color:yellowgreen;
+    border-radius:5px;
+}
+    
+
+#div2U2{
+    position: relative;
+    top: -225px;            
+    left: 187px;
+    margin:75px;
+
+        /*the styling of the div*/
+    border:solid;
+    border-radius:5px;
+    width:250px;
+    padding-left:7px;
+    background-color:yellowgreen;
+    border-radius:5px;
+
+
+    /***** some options for position of div2U2 */    
+    /*
+    top: -600px;    on div1            
+    top: -525px;    on div1U            
+    top: -450px;    on div1U2 it encrease marging 75           
+    top: -375px;    under div1U2            
+    top: -300px;    2x under div1U2
+    top: -225px;    3x under div1U2
+        by alter top +/-75 you can on Y axis step by row
+    */
+
+    /* under div1u2
+    top: -375px;            
+    left: -25px;
+    margin:75px;
+    */
+    
+    /* exactly as div1U2
+    top: -450px;            
+    left: -25px;
+    margin:75px;
+    */
+
+    /*  beside div1U2, under div2u
+    top: -450px;            
+    left: 187px;
+    margin:75px;
+            */
+    /*  beside div1U2, under div3u
+    top: -450px;            
+    left: 401px;
+    margin:75px;
+    */
+
+    /*  under div1U2, under div3u
+    top: -375px;            
+    left: 401px;
+    margin:75px;
+    */
+
+    /*  4x under div2U, beside div1U2
+    top: -225px;            
+    left: 187px;
+    margin:75px;
+    */
+
+}
+
+
+
+/*********************** div3 ************************************/
+
+
+#div3{
+    position: relative;
+    top: -150px;
+    left: 476px;
+
+        /*the styling of the div*/
+    border:solid;
+    border-radius:5px;
+    width:200px;
+    padding-left:7px;
+    background-color:orange;
+
+}
+
+
+#div3U {
+    position: relative;
+    top: -300px; /*from the top of the page 112+112=224*/
+    left: 476px;
+    /*the styling of the div*/
+    border: solid;
+    border-radius: 5px;
+    width: 200px;
+    padding-left: 7px;
+    background-color: orange;
+    border-radius: 5px;
+}
+
+
+ /*************************************/   
+ /************* TABLE STYLING *********/   
+ /*************************************/   
+
+ .tablediv{
+     margin-left: 400px;
+     margin-right: 300px;
+     margin-top: -580px;    /*by increasing this you can move tablediv down e.g. -300px*/
+     border:2px solid blue;
+     /*float:right;*/
+   
+ }
+
+th{
+     background-color:orange;
+ }
+
+.thgreen{
+     background-color:yellowgreen;   
+}
+
+.thred{
+     background-color:red;   
+}
+
+
+/*** Test styling table with id VS class ***/
+#tableDiv123 * {
+    /* order, the last one renders*/
+    border: 2px solid gray;
+    /*border-color:red;     if I activate this line the border will be red, renders last */
+}
+
+.table{
+   border-spacing:10px;     /*this did not work in id, must be used in class*/
+} 
+/*******************************************/
+
+
+
+#tableDisplay{
+    position: relative;
+    top: -650px;            
+    left: 7px;
+    margin:0px;
+    
+    border:solid;
+    border-radius:5px;
+    width:370px;
+    padding-left:7px;
+    background-color:lightblue;
+    border-radius:5px;
+}   
+    

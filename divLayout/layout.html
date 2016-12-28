@@ -1,0 +1,165 @@
+﻿<!doctype html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles/layout.css"/>
+    <title>divLayout</title>
+</head>
+
+
+<body>
+        
+    <div id="divparent1" class="divparents">    <!--8 div's nested in this parent div -->
+
+
+        <!--***************************************************-->
+        <!--********* class div, first top row ****************-->
+        <!--***************************************************-->
+
+        <div id="div1" class="div">
+            <p>id="div1<br /> top 0px left 50px"</p>
+        </div>
+        
+        <div id="div2" class="div">
+            <p>id="div2<br /> top -75px left 263px"</p>
+        </div>
+        
+        <div id="div3" class="div">
+            <p>id="div3<br /> top -150px left 476px"</p>
+        </div>
+
+
+        <!--*************************************************-->
+        <!--********* class divU, second row ****************-->
+        <!--*************************************************-->
+
+        <div id="div1U" class="divU">
+            <p>id="div1U<br /> top -150px left 50px"</p>
+        </div>
+
+        <div id="div2U" class="divU">
+            <p>id="div2U<br /> top -225px left 263px"</p>
+        </div>
+
+        <div id="div3U" class="divU">
+            <p>id="div3U<br /> top -300px left 476px"</p>
+        </div>
+
+
+        <!--************************************************-->
+        <!--********* class divU2 thírd row ****************-->
+        <!--************************************************-->
+
+        <div id="div1U2" class="divU2">
+            <p>id="div1U2<br /> top -300px left 50px"</p>
+        </div>
+
+        <!-- Last child, color:red  -->
+        <div id="div2U2" class="divU2">
+            <p>id="div2U2<br /> top -225px left 187px margin75px"</p>
+        </div>
+
+    </div>
+
+
+
+    <!--********************************************************************************-->
+    <!--********* TABLE with GIF img, layout's for the above div's (F12)****************-->
+    <!--********** Nested in tablediv                                   ****************-->
+    <!--********************************************************************************-->
+
+
+    <div class="tablediv">
+    
+        <table id="tableDiv123" class="table" summary="layouts of divs">
+            <!--cellspacing="10px" attr is done with border-spacing in CSS instead -->
+
+            <caption>Layout of the div's</caption>
+
+            <!--***********************
+            *** first table row     ***
+            ************************-->
+
+            <thead>
+                <tr>
+                    <th>div1</th>
+                    <th class="thgreen">div2</th>
+                    <th>div3</th>
+                </tr>
+            </thead>
+
+            
+            <!--put the tfoot before the tbody to render first-->
+            <tfoot>
+                <tr>
+                    <td colspan="3">view of layouts</td>
+                </tr>
+            </tfoot>
+
+            <tbody>
+                <tr>
+                    <td><img src="images/divlayouts/div1layout.GIF" alt="moved" /> </td>
+                    <td><img src="images/divlayouts/div2layout.GIF" alt="moved" /> </td>
+                    <td><img src="images/divlayouts/div3layout.GIF" alt="moved" /> </td>
+                </tr>
+            </tbody>
+
+            
+            <!--***********************
+            *** second table row    ***
+            ************************-->
+
+
+            <thead>
+                <tr>
+                    <th>div1U</th>
+                    <th class="thgreen">div2U</th>
+                    <th>div3U</th>
+                </tr>
+            </thead>
+
+
+            <tbody>
+                <tr>
+                    <td><img src="images/divlayouts/div1Ulayout.GIF" alt="moved" /> </td>
+                    <td><img src="images/divlayouts/div2Ulayout.GIF" alt="moved" /> </td>
+                    <td><img src="images/divlayouts/div3Ulayout.GIF" alt="moved" /> </td>
+                </tr>
+            </tbody>
+
+
+            <!--***********************
+            *** third table row     ***
+            ************************-->
+                        
+            <thead>
+                <tr>
+                    <th>div1U2</th>
+                    <th class="thred">div2U2</th>
+                    <th>div3U2</th>
+
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><img src="images/divlayouts/div1U2layout.GIF" alt="moved" /></td>
+                    <td><img src="images/divlayouts/div2U2layout.GIF" alt="not defined in HTML" /></td>
+                    <td><img src="images/divlayouts/div3U2layout.GIF" alt="not defined in HTML" /></td>
+                </tr>
+            </tbody>
+
+
+        </table>
+      
+    </div> <!--end tablediv-->
+
+    <div id="tableDisplay">
+        <h1>table div Layout</h1>
+        <img src="images/divlayouts/tableDisplayLayout.GIF" />
+    </div>
+    
+</body>
+</html>
